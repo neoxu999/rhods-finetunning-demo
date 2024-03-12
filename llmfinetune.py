@@ -88,8 +88,8 @@ base_model_name = model_id.split("/")[-1]
 base_model_name = base_model_name + "-2"
 
 # Define the save and push paths
-adapter_model = f"tnscorcoran/{base_model_name}-fine-tuned-adapters"  #adjust 'avijra' to your HuggingFace organisation
-new_model = f"tnscorcoran/{base_model_name}-fine-tuned" #adjust 'avijra' to your HuggingFace organisation
+adapter_model = f"neoxu1688/{base_model_name}-fine-tuned-adapters"  #adjust 'avijra' to your HuggingFace organisation
+new_model = f"neoxu1688/{base_model_name}-fine-tuned" #adjust 'avijra' to your HuggingFace organisation
 
 # Save the model
 model.save_pretrained(adapter_model, push_to_hub=True, use_auth_token=True)
